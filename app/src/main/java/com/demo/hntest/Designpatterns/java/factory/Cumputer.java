@@ -5,7 +5,7 @@ import androidx.annotation.NonNull;
 /**
  * 工厂模式超类
  */
-public abstract class CumFactory {
+public abstract class Cumputer {
     public abstract String getRAM();
     public abstract String getCPU();
     public abstract String getHDD();

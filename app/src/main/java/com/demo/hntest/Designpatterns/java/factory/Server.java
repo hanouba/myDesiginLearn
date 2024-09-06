@@ -1,6 +1,6 @@
 package com.demo.hntest.Designpatterns.java.factory;
 
-public class Server extends CumFactory{
+public class Server extends Cumputer {
     private String ram;
     private String cpu;
     private String hdd;

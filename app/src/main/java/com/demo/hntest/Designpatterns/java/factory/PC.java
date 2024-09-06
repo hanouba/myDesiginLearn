@@ -3,7 +3,7 @@ package com.demo.hntest.Designpatterns.java.factory;
 /**
  * 个人电脑
  */
-public class PC extends CumFactory{
+public class PC extends Cumputer {
     private String ram;
     private String cpu;
     private String hdd;
