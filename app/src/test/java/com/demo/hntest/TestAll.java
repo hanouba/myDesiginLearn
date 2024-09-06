@@ -1,5 +1,11 @@
 package com.demo.hntest;
 
+import android.os.Build;
+
+import com.demo.hntest.Designpatterns.java.BuiderDesign.Builder;
+import com.demo.hntest.Designpatterns.java.BuiderDesign.ConcreateBuilder;
+import com.demo.hntest.Designpatterns.java.BuiderDesign.Director;
+import com.demo.hntest.Designpatterns.java.BuiderDesign.Product;
 import com.demo.hntest.Designpatterns.java.factory.Cumputer;
 import com.demo.hntest.Designpatterns.java.factory.CumputerFactory;
 import com.demo.hntest.Designpatterns.java.factory.PCFractory;
@@ -24,5 +30,15 @@ public class TestAll {
         System.out.println("个人电脑 "+pc);
         Cumputer server = CumputerFactory.getCumputer(new ServerFractory("32G", "i9", "2T"));
         System.out.println("服务器 "+server);
+    }
+
+    //建造者模式
+    @Test
+    public void testBuilder() {
+        Builder builder = new ConcreateBuilder();//创建建造者
+        Director director = new Director(builder);//创建指挥者
+        director.construct();//指挥建造者
+        Product product = builder.getProduct();//获得产品
+        product.show();//显示产品
     }
 }
