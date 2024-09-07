@@ -8,6 +8,11 @@ import com.demo.hntest.Designpatterns.java.BuiderDesign.Director;
 import com.demo.hntest.Designpatterns.java.BuiderDesign.Product;
 import com.demo.hntest.Designpatterns.java.adapter.PowerAdapter;
 import com.demo.hntest.Designpatterns.java.adapter.SpecialPowerOutlet;
+import com.demo.hntest.Designpatterns.java.bridge.GreenColor;
+import com.demo.hntest.Designpatterns.java.bridge.Pentagon;
+import com.demo.hntest.Designpatterns.java.bridge.RedColor;
+import com.demo.hntest.Designpatterns.java.bridge.Shape;
+import com.demo.hntest.Designpatterns.java.bridge.Triangle;
 import com.demo.hntest.Designpatterns.java.factory.Cumputer;
 import com.demo.hntest.Designpatterns.java.factory.CumputerFactory;
 import com.demo.hntest.Designpatterns.java.factory.PCFractory;
@@ -50,4 +55,11 @@ public class TestAll {
         int voltage = powerAdapter.getVoltage();
         System.out.println("适配器获取到的 特殊voltage "+voltage);
     }
+    @Test
+    public void testBridge(){
+        Shape tri = new Triangle(new RedColor());
+        Shape pent = new Pentagon(new GreenColor());
+
+        tri.applyColor();
+        pent.applyColor();}
 }
