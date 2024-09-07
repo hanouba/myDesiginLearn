@@ -6,6 +6,8 @@ import com.demo.hntest.Designpatterns.java.BuiderDesign.Builder;
 import com.demo.hntest.Designpatterns.java.BuiderDesign.ConcreateBuilder;
 import com.demo.hntest.Designpatterns.java.BuiderDesign.Director;
 import com.demo.hntest.Designpatterns.java.BuiderDesign.Product;
+import com.demo.hntest.Designpatterns.java.adapter.PowerAdapter;
+import com.demo.hntest.Designpatterns.java.adapter.SpecialPowerOutlet;
 import com.demo.hntest.Designpatterns.java.factory.Cumputer;
 import com.demo.hntest.Designpatterns.java.factory.CumputerFactory;
 import com.demo.hntest.Designpatterns.java.factory.PCFractory;
@@ -40,5 +42,12 @@ public class TestAll {
         director.construct();//指挥建造者
         Product product = builder.getProduct();//获得产品
         product.show();//显示产品
+    }
+
+    @Test
+    public void testAdapter(){
+        PowerAdapter powerAdapter = new PowerAdapter(new SpecialPowerOutlet());
+        int voltage = powerAdapter.getVoltage();
+        System.out.println("适配器获取到的 特殊voltage "+voltage);
     }
 }
