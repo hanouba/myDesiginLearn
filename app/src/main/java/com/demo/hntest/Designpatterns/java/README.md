@@ -2,3 +2,7 @@
 ### 
     https://linhai.blog.csdn.net/article/details/141070079
 ### 组合模式
+### 装饰器模式
+    https://blog.csdn.net/lilinhai548/article/details/141379930
+    
+### 

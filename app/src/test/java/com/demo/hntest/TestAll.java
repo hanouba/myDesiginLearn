@@ -15,6 +15,10 @@ import com.demo.hntest.Designpatterns.java.bridge.Shape;
 import com.demo.hntest.Designpatterns.java.bridge.Triangle;
 import com.demo.hntest.Designpatterns.java.composite.Circle;
 import com.demo.hntest.Designpatterns.java.composite.Drawing;
+import com.demo.hntest.Designpatterns.java.decorator.Component;
+import com.demo.hntest.Designpatterns.java.decorator.ConcreateDecorator1;
+import com.demo.hntest.Designpatterns.java.decorator.ConcreateDecorator2;
+import com.demo.hntest.Designpatterns.java.decorator.ConcreteComponent;
 import com.demo.hntest.Designpatterns.java.factory.Cumputer;
 import com.demo.hntest.Designpatterns.java.factory.CumputerFactory;
 import com.demo.hntest.Designpatterns.java.factory.PCFractory;
@@ -86,4 +90,15 @@ public class TestAll {
         drawing.draw("blue");
 
     }
+
+    @Test
+    public void testDecorator(){
+        Component component = new ConcreteComponent();
+
+         component = new ConcreateDecorator1(component);
+         component = new ConcreateDecorator2(component);
+
+        component.operation();
+    }
 }
+
