@@ -5,4 +5,6 @@
 ### 装饰器模式
     https://blog.csdn.net/lilinhai548/article/details/141379930
     
-### 
+### 外观模式  Facade Design Pattern
+    https://blog.csdn.net/lilinhai548/article/details/141388432
+### 享元模式 Flyweight Design Pattern

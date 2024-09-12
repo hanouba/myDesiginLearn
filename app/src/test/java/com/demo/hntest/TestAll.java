@@ -19,6 +19,7 @@ import com.demo.hntest.Designpatterns.java.decorator.Component;
 import com.demo.hntest.Designpatterns.java.decorator.ConcreateDecorator1;
 import com.demo.hntest.Designpatterns.java.decorator.ConcreateDecorator2;
 import com.demo.hntest.Designpatterns.java.decorator.ConcreteComponent;
+import com.demo.hntest.Designpatterns.java.facadedesignpattern.Facade;
 import com.demo.hntest.Designpatterns.java.factory.Cumputer;
 import com.demo.hntest.Designpatterns.java.factory.CumputerFactory;
 import com.demo.hntest.Designpatterns.java.factory.PCFractory;
@@ -99,6 +100,12 @@ public class TestAll {
          component = new ConcreateDecorator2(component);
 
         component.operation();
+    }
+
+    @Test
+    public void testFacade(){
+        Facade facade = new Facade();
+        facade.facadeMethod();
     }
 }
 
