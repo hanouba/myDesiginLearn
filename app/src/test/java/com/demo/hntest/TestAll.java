@@ -13,6 +13,8 @@ import com.demo.hntest.Designpatterns.java.bridge.Pentagon;
 import com.demo.hntest.Designpatterns.java.bridge.RedColor;
 import com.demo.hntest.Designpatterns.java.bridge.Shape;
 import com.demo.hntest.Designpatterns.java.bridge.Triangle;
+import com.demo.hntest.Designpatterns.java.composite.Circle;
+import com.demo.hntest.Designpatterns.java.composite.Drawing;
 import com.demo.hntest.Designpatterns.java.factory.Cumputer;
 import com.demo.hntest.Designpatterns.java.factory.CumputerFactory;
 import com.demo.hntest.Designpatterns.java.factory.PCFractory;
@@ -62,4 +64,26 @@ public class TestAll {
 
         tri.applyColor();
         pent.applyColor();}
+
+    @Test
+    public void testShape() {
+        com.demo.hntest.Designpatterns.java.composite.Shape circle = new Circle();
+        com.demo.hntest.Designpatterns.java.composite.Shape tri = new com.demo.hntest.Designpatterns.java.composite.Triangle();
+        com.demo.hntest.Designpatterns.java.composite.Shape tri2 = new com.demo.hntest.Designpatterns.java.composite.Triangle();
+
+        Drawing drawing = new Drawing();
+        drawing.add(circle);
+        drawing.add(tri);
+        drawing.add(tri2);
+        drawing.draw("red");
+
+
+        drawing.clear();
+
+        drawing.add(tri);
+        drawing.add(tri2);
+        drawing.add(circle);
+        drawing.draw("blue");
+
+    }
 }
