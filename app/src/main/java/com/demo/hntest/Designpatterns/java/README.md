@@ -11,3 +11,5 @@
     https://blog.csdn.net/lilinhai548/article/details/141113719
     通过共享已经存在的对象来减少对象的创建数量，从而节省系统资源，提高系统性能。
     实现对像的复用和高效管理。
+### 代理模式 Proxy Design Pattern
+    https://blog.csdn.net/lilinhai548/article/details/141113021

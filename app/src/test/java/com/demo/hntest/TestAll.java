@@ -24,6 +24,8 @@ import com.demo.hntest.Designpatterns.java.factory.Cumputer;
 import com.demo.hntest.Designpatterns.java.factory.CumputerFactory;
 import com.demo.hntest.Designpatterns.java.factory.PCFractory;
 import com.demo.hntest.Designpatterns.java.factory.ServerFractory;
+import com.demo.hntest.Designpatterns.java.proxy.CommandExecutor;
+import com.demo.hntest.Designpatterns.java.proxy.CommandExecutorProxy;
 
 import org.junit.Test;
 
@@ -106,6 +108,17 @@ public class TestAll {
     public void testFacade(){
         Facade facade = new Facade();
         facade.facadeMethod();
+    }
+
+    @Test
+    public void testProxy(){
+        CommandExecutor executor = new CommandExecutorProxy("admin", "admin");
+        try {
+            executor.runCommand("ls -ltr");
+            executor.runCommand("rm -rf abc.pdf");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
 
