@@ -13,3 +13,5 @@
     实现对像的复用和高效管理。
 ### 代理模式 Proxy Design Pattern
     https://blog.csdn.net/lilinhai548/article/details/141113021
+## 行为模式 11种
+### 模板方法 Template Method Design Pattern

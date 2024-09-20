@@ -6,6 +6,8 @@ import com.demo.hntest.Designpatterns.java.BuiderDesign.Builder;
 import com.demo.hntest.Designpatterns.java.BuiderDesign.ConcreateBuilder;
 import com.demo.hntest.Designpatterns.java.BuiderDesign.Director;
 import com.demo.hntest.Designpatterns.java.BuiderDesign.Product;
+import com.demo.hntest.Designpatterns.java.Template.Cricket;
+import com.demo.hntest.Designpatterns.java.Template.Game;
 import com.demo.hntest.Designpatterns.java.adapter.PowerAdapter;
 import com.demo.hntest.Designpatterns.java.adapter.SpecialPowerOutlet;
 import com.demo.hntest.Designpatterns.java.bridge.GreenColor;
@@ -119,6 +121,12 @@ public class TestAll {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    @Test
+    public void testTemplate(){
+        Game game = new Cricket();
+        game.play();
     }
 }
 
