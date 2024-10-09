@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "hnTest"
 include(":app")
+include(":carsdk")

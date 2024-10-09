@@ -12,6 +12,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.demo.carsdk.CarManager
 import com.demo.hntest.ui.theme.HnTestTheme
 import com.demo.hntest.utils.NetUtil
 
@@ -37,7 +38,8 @@ class MainActivity : ComponentActivity() {
             var  type =  NetUtil.getNetWorkType(this)
             println("网络信号强度  type:$type")
         }
-
+        //使用sdk的方法
+        CarManager.getInstance().start()
 
     }
 }
