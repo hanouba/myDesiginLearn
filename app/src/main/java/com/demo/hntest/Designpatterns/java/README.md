@@ -15,3 +15,4 @@
     https://blog.csdn.net/lilinhai548/article/details/141113021
 ## 行为模式 11种
 ### 模板方法 Template Method Design Pattern
+### 观察者模式 Observer Design Pattern
