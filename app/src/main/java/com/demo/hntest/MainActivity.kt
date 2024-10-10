@@ -22,8 +22,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         println("日子日志日志ir日日日i")
         println("网络信号强度  type:$")
-        Log.i(TAG, "onCreate: 网络信号-------" + NetUtil.isWifiApOpen(this))
-        Log.i(TAG, "onCreate: ${NetUtil.getNetWorkType(this)}")
+//        Log.i(TAG, "onCreate: 网络信号-------" + NetUtil.isWifiApOpen(this))
+//        Log.i(TAG, "onCreate: ${NetUtil.getNetWorkType(this)}")
         enableEdgeToEdge()
         setContent {
             HnTestTheme {
@@ -34,9 +34,7 @@ class MainActivity : ComponentActivity() {
                     )
                 }
             }
-            NetUtil.getNetWorkWifiLevel(this)
-            var  type =  NetUtil.getNetWorkType(this)
-            println("网络信号强度  type:$type")
+
         }
         //使用sdk的方法
         CarManager.getInstance().start()

@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">hnTest</string>
+    <string name="activity_text">All the functionality for this app is in
+        the app widget.</string>
+
+    <!-- Heading for the app widget ID panel. -->
+    <string name="widget_id_label">Widget ID</string>
+
+    <!-- Heading for the updated panel. -->
+    <string name="widget_update_label">Last updated</string>
+
+    <!-- Button label for the update button. -->
+    <string name="widget_button_update">Update now</string>
+
+    <!-- Format string for the date & count text view -->
+    <string name="date_count_format">%1$d @%2$s</string>
 </resources>
